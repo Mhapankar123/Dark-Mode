@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+:root {
+  --color1: #1e212d;
+  --color2: #03506f;
+  --color3: #bbbbbb;
+  --color4: #ffe3d8;
+  --color5: #351f39;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+}
+
+.main-container {
+  height: 100vh;
+  background-color: var(--color4);
+}
+
+.logo-cont {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+}
+
+.logo {
+  height: 3rem;
+  width: 8rem;
+  border: 3px solid var(--color5);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+}
+
+.fas {
+  color: var(--color5);
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: relative;
+  animation-duration: 1s ease-in-out;
+  /* text-shadow: 0px 0px 3px #fff; */
+}
+
+.imgcont {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcont > img {
+  height: 50vh;
+  width: 50%;
+}
+
+.imgcont > img:hover {
+  transform: translateY(-20px);
+  transition-duration: 2s;
+  box-shadow: 5px 5px 15px #fff;
+}
+
+.firstdiv {
+  font-size: 1.5rem;
+  margin: 20px 20px;
+  color: var(--color5);
+}
+
+.seconddiv {
+  font-size: 1.5rem;
+  margin: 20px 20px;
+  color: var(--color5);
+}
+
+/* Custom css class */
+.change {
+  background-color: var(--color1);
+  color: var(--color4);
+}
+
+.move {
+  position: absolute;
+  transform: translateX(5rem);
+  transition-duration: 0.7s;
+  transition-timing-function: all ease-in-out;
+  color: var(--color4);
+}
+
+.clr {
+  border-color: var(--color4);
+}
+
+/* Custom css class endshere */
